@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação de Compra de Carro</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="card-title text-center">Avaliação de Compra de Carro</h1>
+                        <form id="carForm" class="mt-4">
+                            <div class="mb-3">
+                                <label for="preco" class="form-label">Preço de Compra:</label>
+                                <select class="form-select" id="preco" name="preco" required>
+                                    <option value="1">1 - Baixo</option>
+                                    <option value="2">2 - Médio</option>
+                                    <option value="3">3 - Alto</option>
+                                    <option value="4">4 - Muito Alto</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="manutencao" class="form-label">Custo de Manutenção:</label>
+                                <select class="form-select" id="manutencao" name="manutencao" required>
+                                    <option value="1">1 - Baixo</option>
+                                    <option value="2">2 - Médio</option>
+                                    <option value="3">3 - Alto</option>
+                                    <option value="4">4 - Muito Alto</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="portas" class="form-label">Número de Portas:</label>
+                                <select class="form-select" id="portas" name="portas" required>
+                                    <option value="2">2 Portas</option>
+                                    <option value="3">3 Portas</option>
+                                    <option value="4">4 Portas</option>
+                                    <option value="5">Mais de 4 Portas</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="capacidade" class="form-label">Capacidade de Pessoas:</label>
+                                <select class="form-select" id="capacidade" name="capacidade" required>
+                                    <option value="2">2 Pessoas</option>
+                                    <option value="4">4 Pessoas</option>
+                                    <option value="5">Mais de 4 Pessoas</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="portaMalas" class="form-label">Tamanho do Porta-malas:</label>
+                                <select class="form-select" id="portaMalas" name="portaMalas" required>
+                                    <option value="1">Pequeno</option>
+                                    <option value="2">Médio</option>
+                                    <option value="3">Grande</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="seguranca" class="form-label">Estimativa de Segurança:</label>
+                                <select class="form-select" id="seguranca" name="seguranca" required>
+                                    <option value="1">Baixa</option>
+                                    <option value="2">Média</option>
+                                    <option value="3">Alta</option>
+                                </select>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary w-100">Avaliar</button>
+                        </form>
+
+                        <div id="resultado" class="mt-4 text-center"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
